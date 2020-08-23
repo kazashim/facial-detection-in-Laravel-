@@ -7,6 +7,13 @@ use Google\Cloud\Core\ServiceBuilder;
 
 class SampleController extends Controller
 {
-    public function detectFaces()    {        //Code will be added here  
+    public function detectFaces()    
+    {     
+
+        $cloud = new ServiceBuilder([
+            'keyFilePath' => base_path('fda.json'),
+            'projectId' => 'facial-detection-app'
+        ]);
+
      }
 }
