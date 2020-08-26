@@ -17,5 +17,7 @@ class SampleController extends Controller
 
         $vision = $cloud->vision();
 
+        $output = imagecreatefromjpeg(public_path('friends.jpg'));
+
      }
 }
