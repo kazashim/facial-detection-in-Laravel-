@@ -11,9 +11,11 @@ class SampleController extends Controller
     {     
 
         $cloud = new ServiceBuilder([
-            'keyFilePath' => base_path('fda.json'),
-            'projectId' => 'facial-detection-app'
+            'keyFilePath' => base_path('facial rec-3912246a7c03.json'),
+            'projectId' => 'facial-rec-287316'
         ]);
+
+        
 
      }
 }
