@@ -11,8 +11,8 @@ class SampleController extends Controller
     {     
 
         $cloud = new ServiceBuilder([
-            'keyFilePath' => base_path('facial rec-3912246a7c03.json'),
-            'projectId' => 'facial-rec-287316'
+            'keyFilePath' => base_path('facial rec-39246a7c03.json'),
+            'projectId' => 'facial-rec-28736'
         ]);
 
         $vision = $cloud->vision();
@@ -33,7 +33,6 @@ class SampleController extends Controller
         }
 
         header('Content-Type: image/jpeg');
-        
         imagejpeg($output);
         imagedestroy($output);
 
