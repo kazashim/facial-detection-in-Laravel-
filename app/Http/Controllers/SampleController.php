@@ -32,5 +32,10 @@ class SampleController extends Controller
             imagerectangle($output, $x1, $y1, $x2, $y2, 0x00ff00);
         }
 
+        header('Content-Type: image/jpeg');
+        
+        imagejpeg($output);
+        imagedestroy($output);
+
      }
 }
