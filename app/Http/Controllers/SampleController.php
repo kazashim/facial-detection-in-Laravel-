@@ -18,6 +18,7 @@ class SampleController extends Controller
         $vision = $cloud->vision();
 
         $output = imagecreatefromjpeg(public_path('friends.jpg'));
+        $image = $vision->image(file_get_contents(public_path('friends.jpg')), ['FACE_DETECTION']);
 
      }
 }
